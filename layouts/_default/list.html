@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tuomas Katajisto | Home</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+    </head>
+    <body>
+        <noscript>Please turn on JS for full page functionality</noscript>
+        <div class="blog">
+            <div class="about-me">
+                <img class="about-me-image" src="https://m.ktj.st/vp/350x350"/>
+                <h1 class="about-me-title"><span style="color: navy">~$</span>Tuomas Katajist<span class="about-me-title-o about-me-title-o-js" id="title-o">o</span></h1>
+                <h2 class="about-me-subtitle"><a class="about-me-link" href="#">Koodista</a> | <a class="about-me-link" href="#">Ruoasta</a> | <a class="about-me-link" href="#">Rahasta</a></h2>
+                <div class="about-me-list">
+                    <h2 onclick="aboutClick()" id="about-title" class="about-me-list-title">+ Minusta</h2>
+                    <div class="about-me-list-container" id="about" hidden>
+                        <p class="about-me-list-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-me-list">
+                    <h2 class="about-me-list-title" id="projects-title" onclick="projectsClick()">+ Projektini</h2>
+                    <div class="about-me-list-container" id="projects" hidden>
+                        <div class="project-container">
+                            <h1 class="project-title">PROJECT</h1>
+                            <p class="project-desc">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-posts">
+                {{ range .Pages }}
+                    <h1 class="post-title">{{ .Title }}</h1 >
+                    <p2 class="post-summary">{{ .Summary }}</p2><br><br>
+                    <a class="post-link" href="{{ .Permalink }}">Lue postaus...</a>
+                {{ end }}
+            </div>
+        </div>
+        <script src="/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+/* About me box styling */
+
+body {
+    font-family: system;
+    transition: 0.2s;
+}
+
+.about-me {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-me-title {
+    margin: 10px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+.about-me-title-o {
+    transition: 0.4s;
+}
+
+.about-me-title-o-js {
+    background-color: navy;
+    color: white;
+}
+
+.about-me-subtitle {
+    font-size: 25px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.about-me-link {
+    text-decoration: none;
+    color: black;
+    transition: 0.15s ease-in-out;
+}
+
+.about-me-link:hover {
+    color: navy;
+}
+
+.about-me-image {
+    border: 1px solid black;
+    box-shadow: 6px 6px black;
+    transition: 0.3s ease-in-out;
+}
+
+.about-me-image:hover {
+    box-shadow: 6px 6px navy;
+    border: 1px solid navy;
+}
+
+.about-me-list{
+    width: 370px;
+}
+
+.about-me-list-container {
+    transition: 0.2s ease-in-out;
+}
+
+.about-me-list-title {
+    user-select: none;
+    font-size: 30px;
+    text-decoration: underline;
+    padding: none;
+    margin: 10px;
+    background-color: rgba(0,0,128, 0.1);
+    transition: ease-in-out 0.2s;
+}
+
+.about-me-list-title:hover {
+    color: navy;
+}
+
+.about-me-list-text {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+/* Project styles */
+
+.project-title {
+    margin-left: 15px;
+    font-size: 25px;
+    color: navy;
+    margin-bottom: 2px;
+    padding-bottom: 0px;
+}
+
+.project-desc {
+    margin-top: 2px;
+    padding-top: 0;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.blog-posts {
+    flex-grow: 1;
+    width: auto;
+    min-width: 500px;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+/* POST STYLES */
+
+.post-title {
+    font-size: 50px;
+    padding: 20px;
+    padding-left: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.post-summary {
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+}
