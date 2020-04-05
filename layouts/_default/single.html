@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/6b6cf24d2b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/post.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="post-title">{{ .Title }}</h1>
+        <p class="date">{{ .Date.Format "January 2006" }}</p>
+        <article class="content">
+        {{ .Content }}
+        </article>
+    </div>
+    <a href="../" class="back-link"><i class="arrow-back fas fa-arrow-left"></i> Takaisin</a>
+    <a class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
+    <a class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
+
+  </body>
+</html>

@@ -78,6 +78,7 @@ body {
     margin: 10px;
     background-color: rgba(0,0,128, 0.1);
     transition: ease-in-out 0.2s;
+    padding-left: 3px;
 }
 
 .about-me-list-title:hover {
@@ -136,4 +137,35 @@ body {
     padding: 10px;
     padding-left: 0px;
     padding-bottom: 20px;
+}
+
+
+/* MISC STYLES */
+
+.github-link {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 60px;
+    color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+.github-link:hover {
+    color: navy;
+    margin-bottom: 5px;
+}
+
+.twitter-link {
+    position: fixed;
+    bottom: 15px;
+    right: 100px;
+    font-size: 60px;
+    color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+.twitter-link:hover {
+    color: navy;
+    margin-bottom: 5px;
 }
