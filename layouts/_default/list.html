@@ -41,8 +41,9 @@
             <div class="blog-posts">
                 {{ range .Pages }}
                     <h1 class="post-title">{{ .Title }}</h1 >
-                    <p2 class="post-summary">{{ .Params.description }}</p2><br><br>
-                    <a class="post-link" href="{{ .Permalink }}">Lue postaus...</a>
+                    <h2 class="blog-post-date">{{ .Date.Format "January 2006" }}</h2>
+                    <p class="post-summary">{{ .Params.description }}</p><br>
+                    <a class="post-link" href="{{ .Permalink }}"><i class="fas fa-book-open"></i> Lue postaus...</a>
                 {{ end }}
             </div>
         </div>
