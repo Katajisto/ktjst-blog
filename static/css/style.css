@@ -109,6 +109,11 @@ body {
     margin-left: 15px;
 }
 
+.project-link {
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
 .blog {
     display: flex;
     flex-direction: row;
