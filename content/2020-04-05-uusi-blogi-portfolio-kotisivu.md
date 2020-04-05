@@ -3,7 +3,7 @@ title: Uusi blogi/portfolio/kotisivu
 date: 2020-04-05T13:36:17.846Z
 description: Oli pakko saada tänne domainin alle jotain järkevää sisältöä.
 ---
-![hugo](/img/index.png)
+![hugo](/img/hugo.png)
 
 Tein kotisivuni pitkän harkinnan jälkeen HUGO:lla, aloitin tekemään niitä GatsbyJS:llä, mutta koin sen ehkä hieman overkilliksi tähän tarkoitukseen. Latasin sitten HUGO:n ja pääsin kirjoittamaan mukavuusalueelleni kuuluvaa Go:ta tässäkin. 
 
