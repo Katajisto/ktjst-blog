@@ -11,4 +11,6 @@ HUGO:n tutorialissa käskettiin lataamaan joku teema, mutta päätin olla tekem�
 
 Tarkoituksena olisi postailla tänne kaikenlaista sisältöä harrastuksistani: koodauksesta, ruuanlaitosta ja taloudesta sekä rahaan liittyvistä asioista, kuten alaotsikossa näkyy. Katsotaan miten käy.
 
+Sivu rendaa puhelimellani edelleen todella oudosti, korjaan sen tulevaisuudessa. 
+
 Sivun koodi löytyy [GitHubista](https://github.com/Katajisto/ktjst-blog).
