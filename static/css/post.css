@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
- font-family: "system";
+ font-family: "system",Arial, Helvetica, sans-serif;
  padding-top: 0px;
  margin-top: 0px;
  padding-bottom: 100px;
