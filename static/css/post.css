@@ -221,4 +221,10 @@ img {
     .post-title {
         font-size: 25px;
     }
+    .twitter-link {
+        font-size: 30px;
+    }
+    .github-link {
+        font-size: 30px;
+    }
 }
