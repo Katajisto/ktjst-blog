@@ -34,8 +34,9 @@ body {
 }
 
 img {
-    width: 500px;
     display: block;
+    width: 50%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -70,7 +71,7 @@ img {
 .container {
     padding: 30px;
     width: 80%;
-    min-width: 500px;
+    min-width: 200px;
     max-width: 1000px;
     display: block;
     margin-left: auto;
@@ -114,3 +115,49 @@ img {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 1030px) {
+    .post-title {
+        font-size: 35px;
+    }
+
+    .bottom-bar {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        left: 0;
+        background-color: navy;
+        display: flex;
+    }
+    .twitter-link {
+        margin-right: 20px;
+        position: static;
+        color:  white;
+        font-size: 40px;
+    }
+    .github-link {
+        color: white;
+        margin-right: 40px;
+        position: static;
+        font-size: 40px;
+    }
+    .back-link {
+        margin-left: 20px;
+        color: white;
+        position: static;
+        margin-right: auto;
+    }
+    .back-link:hover {
+        color: gray;
+    }
+    .twitter-link:hover {
+        color: gray;
+    }
+    .github-link:hover {
+        color: gray;
+    }
+}
