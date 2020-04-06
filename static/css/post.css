@@ -5,6 +5,19 @@
     src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+   
+body::-webkit-scrollbar-track {
+    color: white;
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: navy;
+    border-radius: 10px;
+}
+
 .post-title {
     font-size: 50px;
     text-align: center;
@@ -18,7 +31,6 @@ body {
  margin-top: 0px;
  padding-bottom: 100px;
  margin-bottom: 0px;
- width:100%; 
 }
 
 img {
