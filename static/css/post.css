@@ -65,7 +65,7 @@ body {
 }
 
 .top-bar-title:hover {
-    color: lightblue;
+    color: var(--secondary);
 }
 
 .top-bar-title {
