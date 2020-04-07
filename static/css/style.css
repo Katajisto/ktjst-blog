@@ -64,6 +64,7 @@ body {
     transition: 0.1s;
 }
 
+
 .about-me {
     margin: 20px;
     display: flex;
@@ -80,6 +81,10 @@ body {
 
 .about-me-title-o {
     transition: 0.4s;
+}
+
+.about-me-title-prefix {
+    color: var(--main);
 }
 
 .about-me-title-o-js {
