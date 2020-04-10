@@ -14,19 +14,22 @@
         <div class="top-bar-social">
             <a class="top-bar-social-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a> 
             <a class="top-bar-social-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
+            <a class="top-bar-social-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
     <div class="container">
         <h1 class="post-title">{{ .Title }}</h1>
-        <p class="date">{{ .Date.Format "January 2006" }}</p>
+        <p class="blog-post-date">{{ .Date.Format "January 2006" }}</p>
         <article class="content">
         {{ .Content }}
         </article>
     </div>
     <div class="bottom-bar">
         <a href="../" class="back-link"><i class="arrow-back fas fa-arrow-left"></i> Takaisin</a>
+        <a class="linkedin-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
         <a class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
         <a class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
     </div>
+    <script src="/js/monthReplace.js"></script>
   </body>
 </html>

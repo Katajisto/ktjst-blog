@@ -7,21 +7,25 @@ var projectList = document.getElementById("projects")
 var projectsTitle = document.getElementById("projects-title")
 
 
-function aboutClick() {
-    aboutList.hidden = !aboutList.hidden;
-    if(aboutTitle.innerHTML[0] == "+") {
-        aboutTitle.innerHTML = "- Minusta"
+let aboutLists = document.getElementsByClassName("about-me-list-container");
+let aboutListTitles = document.getElementsByClassName("about-me-list-title");
+
+function listClick(numID) {
+    let curElem = aboutLists[numID];
+    let curElemTitle = aboutListTitles[numID]
+    console.log(curElemTitle.innerHTML[0])
+    curElem.hidden = !curElem.hidden;
+    if(curElem.hidden === true) {
+        curElemTitle.innerHTML = curElemTitle.innerHTML.replace("-","+");
     } else {
-        aboutTitle.innerHTML = "+ Minusta"
+        curElemTitle.innerHTML = curElemTitle.innerHTML.replace("+","-");
     }
 }
 
-function projectsClick() {
-    projectList.hidden = !projectList.hidden;
-    if(projectsTitle.innerHTML[0] == "+") {
-        projectsTitle.innerHTML = "- Projektini"
-    } else {
-        projectsTitle.innerHTML = "+ Projektini"
+//If window is in mobile mode, start the description and project list as minimized.
+if(window.innerWidth < 1030) {
+    for(let i = 0; i < aboutLists.length; i++) {
+        aboutLists[i].hidden = true;
     }
 }
 

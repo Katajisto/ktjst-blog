@@ -84,7 +84,7 @@ img {
     margin-right: auto;
 }
 
-.date {
+.blog-post-date {
     margin-top: 0px;
     padding-top: 0px;
     text-align: center;
@@ -133,6 +133,21 @@ img {
 }
 
 .github-link:hover {
+    color: var(--main);
+    margin-bottom: 5px;
+}
+
+.linkedin-link {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    font-size: 60px;
+    color: var(--secondary);
+    transition: 0.3s ease-in-out;
+}
+
+.linkedin-link:hover {
     color: var(--main);
     margin-bottom: 5px;
 }
@@ -195,7 +210,15 @@ img {
     .github-link {
         display: initial;
         color: var(--bg);
-        margin-right: 40px;
+        margin-right: 20px;
+        position: static;
+        font-size: 40px;
+    }
+}
+    .linkedin-link {
+        display: initial;
+        color: var(--bg);
+        margin-right: 20px;
         position: static;
         font-size: 40px;
     }
@@ -213,6 +236,9 @@ img {
         color: var(--secondary);
     }
     .github-link:hover {
+        color: var(--secondary);
+    }
+    .linkedin-link:hover {
         color: var(--secondary);
     }
 }

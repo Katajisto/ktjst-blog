@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <title>Tuomas Katajisto | Home</title>
+        <title>Tuomas Katajisto</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
     </head>
     <body>
@@ -19,19 +19,31 @@
                 <img class="about-me-image" src="../img/tuomas_md.jpg"/>
                 <h1 class="about-me-title"><span class="about-me-title-prefix">~$</span>./Tuomas Katajist<span class="about-me-title-o about-me-title-o-js" id="title-o">o</span></h1>
                 <div class="about-me-list">
-                    <h2 onclick="aboutClick()" id="about-title" class="about-me-list-title">- Minusta</h2>
-                    <div class="about-me-list-container" id="about">
+                    <h2 onclick="listClick(0)" class="about-me-list-title">- Minusta</h2>
+                    <div class="about-me-list-container">
                         <p class="about-me-list-text">
                             18 vuotias Tampereelle Ulvilasta muuttanut ohjelmoija ja oman elämänsä
                             talousguru sekä Gordon Ramsay. Nykyään enimmäkseen webbiohjelmointia mutta
-                            kisakoodausta on tullut tehtyä ihan ok paljon. Paras ohjelmointikieli on obviously Go.<br><br>
-                            Email: <a href="mailto:t@ktj.st">t@ktj.st</a>
+                            kisakoodausta on tullut tehtyä ihan ok paljon. Paras ohjelmointikieli on obviously Go. <br/><br/>
+                            Sain lukion suoritettua Ulvilassa ja seuraavaksi opiskelemaan Tampereen yliopistoon tietotekniikan DI:ksi.
+                            Opiskelupaikan sain Datatähti kilpailusta.
                         </p>
                     </div>
                 </div>
                 <div class="about-me-list">
-                    <h2 class="about-me-list-title" id="projects-title" onclick="projectsClick()">- Projektini</h2>
-                    <div class="about-me-list-container" id="projects">
+                    <h2 onclick="listClick(1)" class="about-me-list-title">- Yhteystiedot</h2>
+                    <div class="about-me-list-container" id="about">
+                        <p class="about-me-list-text">
+                            <ul class="contact-list">
+                                <li class="contact-list-item">Email = <a href="mailto:t@ktj.st">t@ktj.st</a></li>
+                                <li class="contact-list-item">Puhelin = +358440890044</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="about-me-list">
+                    <h2 class="about-me-list-title" onclick="listClick(2)">- Projektini</h2>
+                    <div class="about-me-list-container" >
                         <div class="project-container">
                             <h1 class="project-title">Maailman epäkäytännöllisin tapa laskea π:n desimaaleja.</h1>
                             <p class="project-desc">Laskee π:n desimaaleja törmäilevien palikkojen ja fysiikkasimulaation avulla. VanillaJS. Jos haluat tietää miksi tämä toimii niin Google: Pi colliding blocks.</p>
@@ -49,6 +61,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
             <div class="blog-posts">
                 {{ range .Pages }}
@@ -62,9 +75,11 @@
             </div>
         </div>
         <div class="bottom-icons">
+            <a class="linkedin-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
             <a class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
             <a class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
         </div>
         <script src="/js/main.js"></script>
+        <script src="/js/monthReplace.js"></script>
     </body>
 </html>
