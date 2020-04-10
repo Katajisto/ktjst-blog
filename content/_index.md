@@ -11,7 +11,7 @@ projects:
       avulla. VanillaJS. Jos haluat tietää miksi tämä toimii niin Google: Pi
       colliding blocks."
     projLink: https://blocks.ktj.st
-    projCode: https://github.com/katajisto
+    projCode: https://github.com/Katajisto/pi-colliding-blocks
   - projTitle: Placeholder kuvageneraattori koirani kuvalla.
     projDesc: Otsikko kertonee kaiken. Hostattu Raspberry Pi serverillä kotonani.
     projLink: https://m.ktj.st/vp/
