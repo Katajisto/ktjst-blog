@@ -4,6 +4,15 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
+  - name: 'index'
+    label: 'Index'
+    folder: 'content'
+    create: true
+    slug: '_index.md'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string'}
   - name: 'blog'
     label: 'Blog'
     folder: 'content'
