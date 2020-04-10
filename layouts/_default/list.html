@@ -19,15 +19,11 @@
                 <img class="about-me-image" src="../img/tuomas_md.jpg"/>
                 <h1 class="about-me-title"><span class="about-me-title-prefix">~$</span>./Tuomas Katajist<span class="about-me-title-o about-me-title-o-js" id="title-o">o</span></h1>
                 <div class="about-me-list">
-                    <h2 onclick="listClick(0)" class="about-me-list-title">- Minusta</h2>
+                    <h2 onclick="listClick(0)" class="about-me-list-title">- {{ .Params.aboutTitle }} </h2>
                     <div class="about-me-list-container">
-                        <p class="about-me-list-text">
-                            18 vuotias Tampereelle Ulvilasta muuttanut ohjelmoija ja oman elämänsä
-                            talousguru sekä Gordon Ramsay. Nykyään enimmäkseen webbiohjelmointia mutta
-                            kisakoodausta on tullut tehtyä ihan ok paljon. Paras ohjelmointikieli on obviously Go. <br/><br/>
-                            Sain lukion suoritettua Ulvilassa ja seuraavaksi opiskelemaan Tampereen yliopistoon tietotekniikan DI:ksi.
-                            Opiskelupaikan sain Datatähti kilpailusta.
-                        </p>
+                        <div class="about-me-list-text">
+                            {{ .Params.about }}
+                        </div>
                     </div>
                 </div>
                 <div class="about-me-list">
