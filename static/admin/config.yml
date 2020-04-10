@@ -12,7 +12,8 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string'}
+      - { label: 'About me - title', name: 'about-title', widget: 'string'}
+      - { label: 'About me', name: 'about', widget: 'markdown'}
   - name: 'blog'
     label: 'Blog'
     folder: 'content'
