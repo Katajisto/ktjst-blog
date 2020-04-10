@@ -38,24 +38,18 @@
                     </div>
                 </div>
                 <div class="about-me-list">
-                    <h2 class="about-me-list-title" onclick="listClick(2)">- Projektini</h2>
+                    <h2 class="about-me-list-title" onclick="listClick(2)">- {{ .Params.projectsTitle }}</h2>
                     <div class="about-me-list-container" >
+                        {{ range .Params.projects }}
                         <div class="project-container">
-                            <h1 class="project-title">Maailman epäkäytännöllisin tapa laskea π:n desimaaleja.</h1>
-                            <p class="project-desc">Laskee π:n desimaaleja törmäilevien palikkojen ja fysiikkasimulaation avulla. VanillaJS. Jos haluat tietää miksi tämä toimii niin Google: Pi colliding blocks.</p>
-                            <a href="https://blocks.ktj.st/" class="project-link"><i class="fas fa-globe-americas"></i> Linkki projektiin</a> - 
-                            <a href="https://github.com/katajisto"><i class="fab fa-github"></i> Linkki koodiin</a>
+                            <h1 class="project-title">{{ .projTitle }}</h1>
+                            <p class="project-desc">{{ .projDesc }}</p>
+                            <div class="proj-links">
+                                <a href="{{ .projLink }}" class="project-link project-list-link"><i class="fas fa-globe-americas"></i> Linkki projektiin</a>
+                                <a href="{{ .projCode }}" class="project-code project-list-link"><i class="fab fa-github"></i> Linkki koodiin</a>
+                            </div>
                         </div>
-                        <div class="project-container">
-                            <h1 class="project-title">Placeholder kuvageneraattori koirani kuvalla</h1>
-                            <p class="project-desc">Otsikko kertonee kaiken tarpeellisen, pyörii Raspberry Pi:lla.</p>
-                            <a href="https://m.ktj.st/vp/" class="project-link"><i class="fas fa-globe-americas"></i>Linkki projektiin</a>
-                        </div>
-                        <div class="project-container">
-                            <h1 class="project-title">React matikkaeditori</h1>
-                            <p class="project-desc">Pieni, suht hyvin toimiva latex editori live refreshillä.</p>
-                            <a href="https://tmacs.ktj.st" class="project-link"><i class="fas fa-globe-americas"></i>Linkki projektiin</a>
-                        </div>
+                        {{ end }}
                     </div>
                 </div>
 

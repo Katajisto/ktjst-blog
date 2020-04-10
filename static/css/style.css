@@ -165,11 +165,6 @@ body {
     margin-left: 15px;
 }
 
-.project-link {
-    margin-left: 15px;
-    margin-top: -5px;
-}
-
 .blog {
     flex-grow: 1;
     display: flex;
@@ -226,6 +221,29 @@ body {
 .temp {
     border: 3px solid pink;
 }
+
+.proj-links {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+
+.project-link {
+    margin-right: 20px;
+    margin-left: 13px;
+}
+
+.project-list-link {
+    transition: 0.2s;
+    color: black;
+}
+
+.project-list-link:hover {
+    color:  var(--main)
+}
+
+
 
 /* MISC STYLES */
 

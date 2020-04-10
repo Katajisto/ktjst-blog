@@ -26,6 +26,7 @@ function listClick(numID) {
 if(window.innerWidth < 1030) {
     for(let i = 0; i < aboutLists.length; i++) {
         aboutLists[i].hidden = true;
+        aboutListTitles[i].innerHTML = aboutListTitles[i].innerHTML.replace('-','+')
     }
 }
 
