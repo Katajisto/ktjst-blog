@@ -6,8 +6,18 @@ about: Tampereelle Ulvilasta muuttanut ohjelmoija. Nykyään enimmäkseen
   mennessä on Datatähti kisan 4. sija, josta sain opiskelupaikan.
 projectsTitle: Projektini
 projects:
+  - projTitle: Maailman epäkäytännöllisin tapa laskea π:n desimaaleja.
+    projDesc: "Laskee π:n desimaaleja törmäilevien palikkojen ja fysiikkasimulaation
+      avulla. VanillaJS. Jos haluat tietää miksi tämä toimii niin Google: Pi
+      colliding blocks."
+    projLink: https://blocks.ktj.st
+    projCode: https://github.com/katajisto
   - projTitle: Placeholder kuvageneraattori koirani kuvalla.
     projDesc: Otsikko kertonee kaiken. Hostattu Raspberry Pi serverillä kotonani.
     projLink: https://m.ktj.st/vp/
     projCode: https://github.com/Katajisto/placeholding-vaino-dog
+  - projTitle: React matikkaeditori
+    projDesc: Pieni, suht hyvin toimiva latex editori live refreshillä.
+    projLink: https://tmacs.ktj.st
+    projCode: https://github.com/Katajisto/tmacs
 ---
