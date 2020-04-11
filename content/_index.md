@@ -20,4 +20,9 @@ projects:
     projDesc: Pieni, suht hyvin toimiva latex editori live refreshillä.
     projLink: https://tmacs.ktj.st
     projCode: https://github.com/Katajisto/tmacs
+  - projTitle: Devlinks
+    projDesc: Pieni React appi, joka listaa hyödyllisiä linkkejä koodaukseen.
+      Hakutoiminto ja suositusformi. Käyttää React hookkeja.
+    projLink: https://devlinks.ktj.st
+    projCode: https://github.com/Katajisto/dev-links
 ---
