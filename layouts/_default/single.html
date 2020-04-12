@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <script src="https://kit.fontawesome.com/6b6cf24d2b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/post.css">
+    <script
+      src="https://kit.fontawesome.com/6b6cf24d2b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/post.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,25 +13,59 @@
   </head>
   <body>
     <div class="top-bar">
-        <a href="/" class="top-bar-title"><i class="fas fa-terminal"></i> Tuomas Katajisto</a>
-        <div class="top-bar-social">
-            <a class="top-bar-social-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a> 
-            <a class="top-bar-social-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
-            <a class="top-bar-social-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
-        </div>
+      <a href="/" class="top-bar-title"
+        ><i class="fas fa-terminal"></i> Tuomas Katajisto</a
+      >
+      <div class="top-bar-social">
+        <a
+          aria-label="Github"
+          class="top-bar-social-link"
+          href="https://github.com/katajisto"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          aria-label="Twitter"
+          class="top-bar-social-link"
+          href="https://twitter.com/tuomaskatajisto"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a
+          aria-label="Linkedin"
+          class="top-bar-social-link"
+          href="https://linkedin.com/in/katajisto"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </div>
     </div>
     <div class="container">
-        <h1 class="post-title">{{ .Title }}</h1>
-        <p class="blog-post-date">{{ .Date.Format "January 2006" }}</p>
-        <article class="content">
+      <h1 class="post-title">{{ .Title }}</h1>
+      <p class="blog-post-date">{{ .Date.Format "January 2006" }}</p>
+      <article class="content">
         {{ .Content }}
-        </article>
+      </article>
     </div>
     <div class="bottom-bar">
-        <a href="../" class="back-link"><i class="arrow-back fas fa-arrow-left"></i> Takaisin</a>
-        <a class="linkedin-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
-        <a class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
-        <a class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
+      <a href="../" class="back-link"
+        ><i class="arrow-back fas fa-arrow-left"></i> Takaisin</a
+      >
+      <a
+        aria-label="Linkedin"
+        class="linkedin-link"
+        href="https://linkedin.com/in/katajisto"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a
+        aria-label="Github"
+        class="github-link"
+        href="https://github.com/katajisto"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        aria-label="Twitter"
+        class="twitter-link"
+        href="https://twitter.com/tuomaskatajisto"
+        ><i class="fab fa-twitter"></i
+      ></a>
     </div>
     <script src="/js/monthReplace.js"></script>
   </body>

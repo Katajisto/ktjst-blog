@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
     <head>
-        <script src="https://kit.fontawesome.com/6b6cf24d2b.js" crossorigin="anonymous"></script>
+        <script defer src="https://kit.fontawesome.com/6b6cf24d2b.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <meta name="Description" content="Kotisivuni/Portfolioni/Blogini">
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <title>Tuomas Katajisto</title>
         <link rel="stylesheet" type="text/css" href="/css/style.css"></link>
     </head>
@@ -16,7 +17,7 @@
         <noscript>Please turn on JS for full page functionality</noscript>
         <div class="blog">
             <div class="about-me">
-                <img class="about-me-image" src="../img/tuomas_md.jpg"/>
+                <img class="about-me-image" alt="Kuva itsestäni" src="../img/tuomas_md.jpg"/>
                 <h1 class="about-me-title"><span class="about-me-title-prefix">~$</span>./Tuomas Katajist<span class="about-me-title-o about-me-title-o-js" id="title-o">o</span></h1>
                 <div class="about-me-list">
                     <h2 onclick="listClick(0)" class="about-me-list-title">- {{ .Params.aboutTitle }} </h2>
@@ -66,9 +67,9 @@
             </div>
         </div>
         <div class="bottom-icons">
-            <a class="linkedin-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
-            <a class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
-            <a class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
+            <a aria-label="Linkdedin" class="linkedin-link" href="https://linkedin.com/in/katajisto"><i class="fab fa-linkedin"></i></a>
+            <a aria-label="Github" class="github-link" href="https://github.com/katajisto"><i class="fab fa-github"></i></a>
+            <a aria-label="Twitter" class="twitter-link" href="https://twitter.com/tuomaskatajisto"><i class="fab fa-twitter"></i></a>
         </div>
         <script src="/js/main.js"></script>
         <script src="/js/monthReplace.js"></script>
