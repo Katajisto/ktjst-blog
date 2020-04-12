@@ -12,6 +12,11 @@ projects:
       colliding blocks."
     projLink: https://blocks.ktj.st
     projCode: https://github.com/Katajisto/pi-colliding-blocks
+  - projTitle: Devlinks
+    projDesc: Pieni React appi, joka listaa hyödyllisiä linkkejä koodaukseen.
+      Hakutoiminto ja suositusformi. Käyttää React hookkeja.
+    projLink: https://devlinks.ktj.st
+    projCode: https://github.com/Katajisto/dev-links
   - projTitle: Placeholder kuvageneraattori koirani kuvalla.
     projDesc: Otsikko kertonee kaiken. Hostattu Raspberry Pi serverillä kotonani.
     projLink: https://m.ktj.st/vp/
@@ -20,9 +25,4 @@ projects:
     projDesc: Pieni, suht hyvin toimiva latex editori live refreshillä.
     projLink: https://tmacs.ktj.st
     projCode: https://github.com/Katajisto/tmacs
-  - projTitle: Devlinks
-    projDesc: Pieni React appi, joka listaa hyödyllisiä linkkejä koodaukseen.
-      Hakutoiminto ja suositusformi. Käyttää React hookkeja.
-    projLink: https://devlinks.ktj.st
-    projCode: https://github.com/Katajisto/dev-links
 ---
