@@ -12,6 +12,12 @@ projects:
       colliding blocks."
     projLink: https://blocks.ktj.st
     projCode: https://github.com/Katajisto/pi-colliding-blocks
+  - projTitle: React-io-terminal
+    projDesc: React terminaali komponentti. Ensimmäinen npm pakettini. Helppo lisätä
+      React projektiin ja voit muokata terminaalin ulkonäköä sekä antaa
+      komponentille handler funktion.
+    projLink: terminal-demo.ktj.st
+    projCode: https://github.com/Katajisto/react-io-terminal
   - projTitle: Devlinks
     projDesc: Pieni React appi, joka listaa hyödyllisiä linkkejä koodaukseen.
       Hakutoiminto ja suositusformi. Käyttää React hookkeja.
