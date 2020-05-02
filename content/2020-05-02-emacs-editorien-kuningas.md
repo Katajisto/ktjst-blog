@@ -21,7 +21,7 @@ Asentamani paketit (suurin osa MELPA:sta), listaan näitä sitä mukaan kun asen
 * rjsx-mode (Emacs mode, jotta JSX toimii kunnolla)
 * go-mode (Emacs mode, Go:n kirjoittamiseen)
 * emmet-mode (Tuo erittäin kätevän Emmetin Emacsiin)
-
+* fira-code-mode (Jotta Fira Code fontti toimisi täysin. Täytyy ladata: [Tämä fontti lisäksi](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip))
 
 /.emacs.d/.init.el:
 
@@ -51,7 +51,9 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (emmet-mode rjsx-mode naysayer-theme go-mode))))
+ '(package-selected-packages
+   (quote
+    (fira-code-mode emmet-mode rjsx-mode naysayer-theme go-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,5 +66,5 @@ There are two things you can do about this warning:
 (setq ring-bell-function 'ignore) ;; Stop annoying beeps
 (global-set-key "j" (quote emmet-expand-line)) ;; C-x j expands emmet
 (add-to-list 'auto-mode-alist '("\\.js\\'" . rjsx-mode))
-
+(global-fira-code-mode)
 ```
