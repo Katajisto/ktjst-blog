@@ -5,6 +5,8 @@ description: Emacs on se ainoa oikea editori, don't @ me.
 ---
 ![emacs-logo](/img/emacs.png)
 
+
+
 Veikkaan, että jokainen ohjelmoija on käyttänyt uransa aikana kohtuullisen montaa editoria, kunnes on löytänyt sen joka tuntuu omalta (jollei ole aloittanut viimeaikoina ja käyttänyt VS codea koko sen ajan kun on koodannut). Ihan ensimmäiseksihän aloitin vanhalla kunnon notepadilla, jolla sai kätevästi kirjoitettua batch skriptejä. Kun tarvi oppia C++:ssaa, luulin että ainoa vaihtoehto oli 30Gb:n Visual Studio. Voi kuinka väärässä ihminen voikaan olla. 
 
 Kisakoodatessa, sain hyvin nopeasti kuulla, ettei Visual Studiolla (tai ylipäätään millään IDE:llä tee mitään), ja päädyin kokeilemaan Vim:iä. Ohjelmaa, jonka käyttökokemus on aivan järkyttävää kahden eri moodin välillä sahaamista ja kokemukseni Vim:istä jäi "How to get out of a Vim instance" google-hakuun. Emacsissä minuun vetosivat aluksi mielestäni helpot näppäinyhdistelmät sekä ikkunoiden helppo jakaminen osiin ja niiden välillä liikkuminen.
@@ -15,6 +17,8 @@ Töideni alkaessa pian, tulee minun päättää, minkä tekstieditorin otan päi
 
 Tämä postaushan oli oikeasti vain tekosyy listata tänne Emacs conffini, jotta saan kopioitua sen täältä aina helposti eri koneille.
 
+![koodia](/img/e.png)
+
 Asentamani paketit (suurin osa MELPA:sta), listaan näitä sitä mukaan kun asentelen niitä:
 
 * Naysayer-theme (ohjelmoijaidolini Jonathan Blow:n Emacs teema)
@@ -23,6 +27,7 @@ Asentamani paketit (suurin osa MELPA:sta), listaan näitä sitä mukaan kun asen
 * emmet-mode (Tuo erittäin kätevän Emmetin Emacsiin)
 * fira-code-mode (Jotta Fira Code fontti toimisi täysin. Täytyy ladata: [Tämä fontti lisäksi](https://github.com/tonsky/FiraCode/files/412440/FiraCode-Regular-Symbol.zip))
 * prettier-js (koodin formatointi)
+* rainbow-delimiters (värittää sulut ja vastaavat vastaamaan niiden syvyyttä)
 
 /.emacs.d/.init.el:
 
