@@ -6,6 +6,11 @@ about: Tampereelle Ulvilasta muuttanut ohjelmoija. Nykyään enimmäkseen
   mennessä on Datatähti kisan 4. sija, josta sain opiskelupaikan.
 projectsTitle: Projektini
 projects:
+  - projTitle: LOTR Login sivu
+    projDesc: Lord Of The Rings aiheinen sivu, josta pääsee läpi kotisivulleni jos
+      tietää mitä tekee.
+    projLink: https://enter.ktj.st
+    projCode: https://enter.ktj.st
   - projTitle: React-io-terminal
     projDesc: React terminaali komponentti. Ensimmäinen npm pakettini. Helppo lisätä
       React projektiin ja voit muokata terminaalin ulkonäköä sekä antaa
