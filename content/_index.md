@@ -8,7 +8,7 @@ projectsTitle: Projektini
 projects:
   - projTitle: LOTR Login sivu
     projDesc: Lord Of The Rings aiheinen sivu, josta pääsee läpi kotisivulleni jos
-      tietää mitä tekee.
+      tietää mitä tekee. Projektin pääasia on siinä oleva SVG animaatio.
     projLink: https://enter.ktj.st
     projCode: https://enter.ktj.st
   - projTitle: React-io-terminal
