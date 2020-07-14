@@ -1,7 +1,8 @@
 ---
 title: Emacs configuraationi
 date: 2020-06-05T05:10:11.973Z
-description: Copy pastettu emacs config webbidevaukseen, lähinnä omaan käyttöön.
+description: Copy pastettu emacs config webbidevaukseen ja muuhun, lähinnä omaan
+  käyttöön. Käytä jos huvittaa.
 ---
 Koska emas on vaan se paras editori ihan mihin vaan, dont @ me.
 
