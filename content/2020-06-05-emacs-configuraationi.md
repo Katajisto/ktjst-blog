@@ -42,6 +42,7 @@ There are two things you can do about this warning:
  ;; If there is more than one, they won't work right.
  )
 (add-to-list 'auto-mode-alist '(".*.js" . rjsx-mode))
+(add-to-list 'auto-mode-alist '(".*.svelte" . rjsx-mode))
 
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
