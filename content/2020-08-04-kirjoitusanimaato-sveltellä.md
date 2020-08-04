@@ -7,8 +7,6 @@ description: Tein pienen Svelte komponentin, joka näyttää tekstiä kirjoitusa
 
 Koodi on melko yksinkertainen, mutta mielestäni kohtuullisen elegantti. Se toimii kutsumalla rekursiivista funktiota, joka kutsuu aina itseään setTimeoutilla. Näin on helppo määrittää kuinka pitkä viive seuraavan merkin syöttämiseen/poistamiseen on. Tällä saadaan aikaan mukavan "aidon" oloinen kirjoitusanimaatio verrattuna siihen, jos kaikissa väleissä olisi yhtä pitkä viive.
 
- 
-
 ```html
 <script>
 	let text = ""
@@ -70,6 +68,6 @@ Koodi on melko yksinkertainen, mutta mielestäni kohtuullisen elegantti. Se toim
 </style>
 
 <h2>
-	We have the answer to {text}<span class={blink ? "blink" : "no-blink"}>|</span>
+	{text}<span class={blink ? "blink" : "no-blink"}>|</span>
 </h2>
 ```
