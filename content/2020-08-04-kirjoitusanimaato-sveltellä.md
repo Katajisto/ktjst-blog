@@ -1,7 +1,8 @@
 ---
 title: "Kirjoitusanimaato Sveltellä. "
 date: 2020-08-04T18:08:27.284Z
-description: Tein pienen Svelte komponentin, joka näyttää tekstiä kirjoitusanimaatiolla.
+description: Tein pienen Svelte komponentin, joka näyttää tekstiä
+  kirjoitusanimaatiolla (Typewriter effect).
 ---
 ![The typing animation.](/img/svelte-typing.gif "The typing animation.")
 
