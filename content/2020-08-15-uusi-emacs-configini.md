@@ -4,7 +4,7 @@ date: 2020-08-15T15:55:55.642Z
 description: Päätin uudelleenconffata emacsini koulun aloituksen kunniaksi. Saa
   käyttää jos huvittaa.
 ---
-
+### Uses the gopls LSP.
 
 ```
 ; KTJST Emacs config. Finally decided to write my own from scratch. 
@@ -97,12 +97,18 @@ description: Päätin uudelleenconffata emacsini koulun aloituksen kunniaksi. Sa
 (use-package naysayer-theme)
 (load-theme 'naysayer t)
 (custom-set-variables
-
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auto-package-update helm use-package web-mode svelte-mode rjsx-mode prettier-js neotree naysayer-theme magit go-mode fira-code-mode emmet-mode auto-complete all-the-icons))))
+    (yasnippet company lsp-ui lsp-mode auto-package-update helm use-package web-mode svelte-mode rjsx-mode prettier-js neotree naysayer-theme magit go-mode fira-code-mode emmet-mode auto-complete all-the-icons))))
 (custom-set-faces
- 
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  )
 
 (defun my-setup-indent (n)
@@ -174,30 +180,35 @@ description: Päätin uudelleenconffata emacsini koulun aloituksen kunniaksi. Sa
 
 (global-set-key "\M-g" 'goto-line)
 
-(defun my-go-mode-hook ()
-  (add-hook 'before-save-hook 'gofmt-before-save) ; gofmt before every save
-  (if (not (string-match "go" compile-command))   ; set compile command default
-      (set (make-local-variable 'compile-command)
-           "go build -v && go test -v && go vet"))
-  ;; guru settings
-  (go-guru-hl-identifier-mode)                    ; highlight identifiers
-  
-  ;; Key bindings specific to go-mode
-  (local-set-key (kbd "M-.") 'godef-jump)         ; Go to definition
-  (local-set-key (kbd "M-*") 'pop-tag-mark)       ; Return from whence you came
-  (local-set-key (kbd "M-p") 'compile)            ; Invoke compiler
-  (local-set-key (kbd "M-P") 'recompile)          ; Redo most recent compile cmd
-  (local-set-key (kbd "M-]") 'next-error)         ; Go to next error (or msg)
-  (local-set-key (kbd "M-[") 'previous-error)     ; Go to previous error or msg
+(use-package lsp-mode
+  :ensure t
+  :commands (lsp lsp-deferred)
+  :hook (go-mode . lsp-deferred))
 
-  (auto-complete-mode 1))                         ; Enable auto-complete mode
+;; Set up before-save hooks to format buffer and add/delete imports.
+;; Make sure you don't have other gofmt/goimports hooks enabled.
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook #'lsp-go-install-save-hooks)
 
-(with-eval-after-load 'go-mode
-   (require 'go-autocomplete))
+;; Optional - provides fancier overlays.
+(use-package lsp-ui
+  :ensure t
+  :commands lsp-ui-mode)
 
-(require 'go-guru)
+;; Company mode is a standard completion package that works well with lsp-mode.
+(use-package company
+  :ensure t
+  :config
+  ;; Optionally enable completion-as-you-type behavior.
+  (setq company-idle-delay 0)
+  (setq company-minimum-prefix-length 1))
 
-(add-hook 'go-mode-hook 'my-go-mode-hook)
-
+;; Optional - provides snippet support.
+(use-package yasnippet
+  :ensure t
+  :commands yas-minor-mode
+  :hook (go-mode . yas-minor-mode))
 
 ```
