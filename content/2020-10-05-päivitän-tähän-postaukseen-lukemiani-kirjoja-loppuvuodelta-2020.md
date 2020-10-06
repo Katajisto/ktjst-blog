@@ -7,11 +7,11 @@ description: Huomasin lukevani aivan liian vähän. Täten ostin muutamia kirjoj
 ---
 ## Kirja 1:
 
-![Aki Hintsan kirjan kansikuva](/img/kiraj2.jpg)
+![Aki Hintsan kirjan kansikuva](/img/kirja.jpeg)
 
-## Voittamisen anatomia.
+## Aki Hintsa: Voittamisen anatomia.
 
-### Aki Hintsa
+### Oskari Saari
 
 Loistava lyhyt oppimäärä terveyteen liittyvistä asioista, jotka urakeskeisen ihmisen olisi hyvä tietää välttääkseen terveytensä rapautuminen. Avasi minulle käytännön asioita terveyteen liittyen erittäin hyvin. Sisältää myös mielenkiintoista tietoa F1:sen kulisseista.
 
