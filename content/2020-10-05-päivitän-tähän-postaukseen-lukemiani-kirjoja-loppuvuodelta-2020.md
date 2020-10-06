@@ -7,7 +7,7 @@ description: Huomasin lukevani aivan liian vähän. Täten ostin muutamia kirjoj
 ---
 ## Kirja 1:
 
-![Aki Hintsan kirjan kansikuva](/img/kirja.jpeg)
+![Aki Hintsan kirjan kansikuva](/img/kiraj2.jpg)
 
 ## Aki Hintsa: Voittamisen anatomia.
 
