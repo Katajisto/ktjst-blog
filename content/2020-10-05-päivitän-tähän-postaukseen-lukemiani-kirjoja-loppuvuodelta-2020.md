@@ -23,4 +23,4 @@ Loistava lyhyt oppimäärä terveyteen liittyvistä asioista, jotka urakeskeisen
 
 ### Risto Siilasmaa
 
-Kirja oli erittäin hyvä ja vei elävästi Suomalaisen ja kansainvälisen yritysmaailman huipulle. Se myös selvensi minulle paljon Nokian murrokseen liittyviä asoita, joista olin aiemmin voinut vain spekuloida.
+Kirja oli erittäin hyvä ja vei elävästi suomalaisen ja kansainvälisen yritysmaailman huipulle. Se myös selvensi minulle paljon Nokian murrokseen liittyviä asoita, joista olin aiemmin voinut vain spekuloida.
