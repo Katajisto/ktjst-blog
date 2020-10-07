@@ -3,7 +3,8 @@ aboutTitle: Minusta
 about: Tampereelle Ulvilasta muuttanut ohjelmoija. Nykyään enimmäkseen
   webbijuttuja, kisakoodaus ja algoritmit silti lähellä sydäntä. Harrastuksina
   talous, sijoittaminen, erämaavaellus sekä ruoka. Suurin saavutus tähän
-  mennessä on Datatähti kisan 4. sija, josta sain opiskelupaikan.
+  mennessä on Datatähti kisan 4. sija, josta sain opiskelupaikan. Paras
+  ohjelmointikieli on Go ja paras webbiframeworkki on Svelte + Typescript.
 projectsTitle: Projektini
 projects:
   - projTitle: Peliteoria demo
